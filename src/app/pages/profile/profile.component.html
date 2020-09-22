@@ -1,0 +1,79 @@
+<h1>PROFILE</h1>
+
+<div *ngIf="Ref==20142">
+    <img src="././assets/mashudu.jpeg">
+    
+ </div> 
+ <div *ngIf="Ref==20144">
+    <img src="././assets/moloto.jpeg">
+ 
+ </div> 
+ <div *ngIf="Ref==20143">
+    <img src="././assets/maano1.jpg">
+
+ </div> 
+ <div *ngIf="Ref==20145">
+    <img src="././assets/mokgadi.jpeg">
+
+ </div> 
+<div *ngIf="user"class="info" >
+    {{user.Name}}<br>
+    {{user.Bio}}<br><br>
+   
+    </div>
+   <div *ngIf="Subjects" class="subjects">
+     <P>Institution:{{Subjects.institute}}<br></P>
+     <p>Mark:{{Subjects.marks}}<br></p>
+      <p>module-code:{{Subjects.subjectid}}<br></p>
+       <p>Subjectcode:{{Subjects.subjectname}}<br></p>
+        <p>Subject:{{Subjects.year}}</p>
+      </div>
+      <div class="marks">
+        <div
+          class="col-3 text-success"
+          *ngIf="Subjects.marks > '49' && Subjects.marks < '79'"
+        >
+          Qualify
+        </div>
+        <div
+          class="col-3 text-success"
+          *ngIf="Subjects.marks > '44' && Subjects.marks < '50'"
+        >
+          Qulify for re-exam
+        </div>
+        <div class="col-3 text-danger" *ngIf="Subjects.marks < '45'">Fail!   
+        </div>
+        <div class="col-3 text-success" *ngIf="Subjects.marks > '79'">
+          Qualify with distinction
+        </div>
+      </div>
+
+      <!--<ng-template class="col-3 text-success" #qulifyTemplate>
+        Qualify
+      </ng-template>-->
+    
+
+        <!--<form #form="ngForm"(ngSubmit)="updates(form)">
+         <h4>details of the user</h4>
+    <input name='subjectid' #subjectid='ngModel' ngModel required placeholder="subjectid">
+    <input name='subjectname' #subjectname='ngModel' ngModel required placeholder="subjectname">
+    <input name='marks' #marks='ngModel' ngModel required placeholder="marks">
+    <input name='year' #year='ngModel' ngModel required placeholder="year">
+    <input name='institute' #institute='ngModel' ngModel required placeholder="instute">
+    <input name='Userid' #institute='ngModel' ngModel required placeholder="Userid">
+    <button type="submit">Update details</button>
+        </form>-->
+
+       
+        <div>
+            <h3>Connect</h3>
+            <a href="https://www.facebook.com">  <i class="fab fa-2x fa-facebook-square"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=+27827967641&text=Hi @eMD Agency%21%20I have Questions%20in%20Regard with %20 
+            your services%C3%f1%20" class="float" target="_blank">
+            <i class="fab fa-2x fa-whatsapp"></i></a>
+             <a href="https://twitter.com" > <i class="fab fa-2x fa-twitter"></i></a>
+               
+        </div>
+        
+<p class="text2">Copyright © 2020 eMD Web Design Agency | Powered by visual-studio</p>
+        

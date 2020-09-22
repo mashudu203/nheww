@@ -1,0 +1,38 @@
+img{
+   
+    border-radius: 10px;
+    height: 225px;
+    width: 225px;
+    text-align: center;
+    position: relative;
+    right: -550px;
+}
+h1{
+    text-align: center;
+}
+.subjects{
+    text-align: center;
+    color: #000;
+    
+}
+.user{
+    text-align: center;
+}
+.exam{
+    position: relative;
+    bottom:-250px;
+    text-transform: capitalize;
+    text-decoration-color: tomato;
+    
+    
+}
+p{
+    text-align: center;
+}
+.info{
+    text-align: center;
+   color: #000;
+}
+.marks{
+text-align: center;
+}
